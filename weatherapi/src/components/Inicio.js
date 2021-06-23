@@ -202,7 +202,7 @@ const Inicio = (props) => {
 
                     }
                     <div className="add-city">
-                        <button className="add-city-button">Add Locations</button>
+                        <button className="add-city-button">Add Locations </button>
                         <img className="add-city-img" src={ciudad} alt="City"></img>
                     </div>
                 </div>
