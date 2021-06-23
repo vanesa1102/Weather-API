@@ -1,5 +1,6 @@
 
 import React, { useContext, useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import portada from '../images/portada.jpg'
 import monserrate from '../images/monserrate.png'
 import plaza from '../images/plaza.jpg'
@@ -21,7 +22,7 @@ const Inicio = (props) => {
     //Lista de lugares 
     const lugares = [
         { name: "Monserrate", image: monserrate },
-        { name: "Plaza", image: plaza },
+        { name: "Plaza de Bolivar", image: plaza },
         { name: "Candelaria", image: candelaria }
     ]
 
@@ -155,9 +156,9 @@ const Inicio = (props) => {
                     <div className="row">
                         <div className="place-to-visit-title">
                             <p><strong>Place to </strong>visit</p>
-                            <a href="" className="big-picture">
+                            <Link to={'/'+lugares[0].name} className="big-picture">
                                 <img src={lugares[0].image}></img>
-                            </a>
+                            </Link>
 
                         </div>
                         <div className="place-to-visit-reviews">
@@ -167,13 +168,13 @@ const Inicio = (props) => {
                                 <img src={profile}></img>
 
                             </div>
-                            <div className="small-picture">
+                            <Link to={'/'+lugares[2].name} className="small-picture">
                                 <img src={lugares[2].image}></img>
-                            </div>
-                            <div className="medium-picture">
+                            </Link>
+                            <Link to={'/'+lugares[1].name} className="medium-picture">
                                 <img src={lugares[1].image}></img>
                                 <a href="add link here" alt={lugares[1].name} >+</a>
-                            </div>
+                            </Link>
                         </div>
 
                     </div>

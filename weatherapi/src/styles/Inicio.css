@@ -306,6 +306,11 @@
     
 }
 
+
+.home-button{
+    margin: 20px;
+}
+
 @media screen and (max-width: 991px) {
     .row {
         display: inline;
